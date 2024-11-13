@@ -8,7 +8,7 @@ namespace Téglalap
 {
     class Teglalapszamitasok
     {
-        private double Aoldal,
+        protected double Aoldal,
             Boldal,
             Terulet,
             Kerulet;
@@ -30,6 +30,14 @@ namespace Téglalap
         public void ReadBoldal(double boldal)
         {
             this.Boldal = boldal;
+        }
+        public double GetAoldal()
+        {
+            return this.Aoldal;
+        }
+        public double GetBoldal()
+        {
+            return this.Boldal;
         }
         //Terület kiszámítása
         public void TeruletSzam()
